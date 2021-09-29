@@ -27,7 +27,8 @@ The progress-stage interpretation:
 |-|:-:|:-:|:-:|
 | Setting up react.js to upcoming features |❌|30.09.2021|Ula, Krzysiu|           
 | Connection of the following to the main GitHub site: CircleCI platform with its own database |❌|30.09.2021|Ula|
-| Connection of the back-end functionalities to the front-end design: login, register, library content |🚧|9.10.2021|Ula|
+| Connection of the back-end functionalities to the front-end design: login, register, library content |❌|9.10.2021|Ula|
+| Back-end creation (server + database) |🚧|31.09.2021|Ula|
 | --- |❌|31.10.2021|---|
 | --- |❌|31.10.2021|---|
 
@@ -37,6 +38,7 @@ The progress-stage interpretation:
 | Design of the logo: draw-version |❌|10.10.2021|Sandra|
 | Design of the logo: convert to a vector version |❌|17.10.2021|Krzysiu|
 | Design of the icons |❌|17.10.2021|Pola|
+| Create background Particles | ✔ |29.09.2021|Ula|
 | --- |❌|31.10.2021|---|
 | --- |❌|31.10.2021|---|
 
