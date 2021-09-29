@@ -6,9 +6,10 @@ function Header() {
         <div>
             <p>Whatever</p>
             <p>Hehe</p>
+            <p>Hehe</p>
         </div>
     )
 }
 
-export default Header;
 
+export default Header;
