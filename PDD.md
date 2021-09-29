@@ -39,7 +39,7 @@ The progress-stage interpretation:
 | Design of the logo: convert to a vector version |❌|17.10.2021|Krzysiu|
 | Design of the icons |❌|17.10.2021|Pola|
 | Create background Particles | ✔ |29.09.2021|Ula|
-| --- |❌|31.10.2021|---|
+| Design of the background: particles |✔|29.09.2021|Ula|
 | --- |❌|31.10.2021|---|
 
 | Other | Progress | Target finish date | Person responsible |
