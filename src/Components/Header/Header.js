@@ -1,12 +1,12 @@
 import React from 'react'
 
+import './Header.css'
+
 function Header() {
 
     return(
         <div>
-            <p>Whatever</p>
-            <p>Hehe</p>
-            <p>Hehe</p>
+            <p className="header-div-1-009">Wait for that</p>
         </div>
     )
 }
