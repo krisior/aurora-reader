@@ -23,30 +23,29 @@ The progress-stage interpretation:
 ***As of the day: 26.09.2021***
 
 
-| Website element - Back-end | Progress | Target finish date | Person responsible |
-|-|:-:|:-:|:-:|
-| Setting up react.js to upcoming features |❌|30.09.2021|Ula, Krzysiu|           
-| Connection of the following to the main GitHub site: CircleCI platform with its own database |❌|30.09.2021|Ula|
-| Connection of the back-end functionalities to the front-end design: login, register, library content |❌|9.10.2021|Ula|
-| Back-end creation (server + database) |🚧|31.09.2021|Ula|
-| --- |❌|31.10.2021|---|
-| --- |❌|31.10.2021|---|
+| Website element - Back-end | Progress | Target finish date | Person responsible | Finish Date |
+|-|:-:|:-:|:-:|:-:| 
+| Setting up react.js to upcoming features |❌|30.09.2021|Ula, Krzysiu| --- |           
+| Connection of the following to the main GitHub site: CircleCI platform with its own database |❌|30.09.2021|Ula| --- | 
+| Connection of the back-end functionalities to the front-end design: login, register, library content |❌|9.10.2021|Ula| --- | 
+| Back-end creation (server + database) |🚧|31.09.2021|Ula| --- | 
+| --- |❌|31.10.2021|---| --- | 
+| --- |❌|31.10.2021|---| --- | 
 
-| Website element - Front-end | Progress | Target finish date | Person responsible |
-|-|:-:|:-:|:-:|
-| Design of the project (both desktop and mobile) (Figma) |✔|30.09.2021|Ula|
-| Design of the logo: draw-version |❌|10.10.2021|Sandra|
-| Design of the logo: convert to a vector version |❌|17.10.2021|Krzysiu|
-| Design of the icons |❌|17.10.2021|Pola|
-| Create background Particles | ✔ |29.09.2021|Ula|
-| Design of the background: particles |✔|29.09.2021|Ula|
-| --- |❌|31.10.2021|---|
+| Website element - Front-end | Progress | Target finish date | Person responsible | Finish Date | 
+|-|:-:|:-:|:-:|:-:| 
+| Design of the project (both desktop and mobile) (Figma) |✔|30.09.2021|Ula| --- | 
+| Design of the logo: draw-version |❌|10.10.2021|Sandra| --- | 
+| Design of the logo: convert to a vector version |❌|17.10.2021|Krzysiu| --- | 
+| Design of the icons |❌|17.10.2021|Pola| --- | 
+| Design of the background: particles |✔|29.09.2021|Ula| 29.09.2021 | 
+| --- |❌|31.10.2021|---| --- | 
 
-| Other | Progress | Target finish date | Person responsible |
-|-|:-:|:-:|:-:|
-| GitHub design and management |🚧|until the end|Sandra, Krzysiu|
-| Welcome-PDF once after register: creation |❌|08.11.2021|Krzysiu|
-| Welcome-PDF once after register: implementation |❌|15.11.2021|Ula|
+| Other | Progress | Target finish date | Person responsible | Finish Date | 
+|-|:-:|:-:|:-:|:-:|
+| GitHub design and management |🚧|until the end|Sandra, Krzysiu| --- | 
+| Welcome-PDF once after register: creation |❌|08.11.2021|Krzysiu| --- | 
+| Welcome-PDF once after register: implementation |❌|15.11.2021|Ula| --- | 
 
 
 #### (end date: 30.11.2021)
