@@ -1,14 +1,24 @@
+
 import React from 'react';
+
+import './App.css';
 
 import Header from './Components/Header/Header';
 import BgParticles from './Components/BgParticles/BgParticles';
+import LoginRegister from './Components/LoginRegisterForm/LoginRegisterForm';
+
+import logo_1 from './logo.png'; 
 
 function App() {
   return (
     <div className="App">
-      <BgParticles/> {/*DO NOT TOUCH THIS ONE, IT'S ALREADY SET AS BACKGROUND*/}
       
+      <BgParticles/> {/*already set as background*/}
       <Header />
+
+      
+        
+      <LoginRegister />
     </div>
   );
 }

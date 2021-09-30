@@ -1,3 +1,25 @@
-.header-div-1-009 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body { 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+.header {
+    overflow: hidden;
+    background-color: none;
+    padding: 20px 10px;
+
+    border: 3px solid red;
+}
+
+div.self-header {
+    opacity: 0.8;
+    font-size: 2em;
+    color: black;
+    transition: ease-out 0.2s;
+}
+
+div.self-header:hover {
+    cursor: pointer;
+    color: #3498db;
 }
