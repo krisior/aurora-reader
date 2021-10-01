@@ -1,0 +1,27 @@
+body { 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+.page-content {
+    width: 50%;
+    margin: 0 auto;
+    
+    height: 100px;
+
+    display: block;
+
+    background-color: none;
+    /*border: 1px solid red;*/
+}
+
+.aurora-name {
+    width: 200px;
+    height: 100px;
+
+    display: block;
+    float: left;
+    padding: 0;
+
+    background-color: none;
+    /*border: 1px solid red;*/
+}
