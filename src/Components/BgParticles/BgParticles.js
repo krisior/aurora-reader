@@ -1,5 +1,8 @@
 import React, {useLayoutEffect} from 'react';
 
+import './BgParticles.css'
+
+
 const BgParticles = () => {
 
     useLayoutEffect(()=>{
@@ -77,8 +80,9 @@ const BgParticles = () => {
         animate();
     });
 
+    
     return(
-        <canvas id="particle-canvas" style={{position:'fixed', top:0, right:0, bottom:0, left:0, zIndex:-1, backgroundColor:'#FFFFFF'}} >
+        <canvas id="particle-canvas" style={{position:'fixed', top:0, right:0, bottom:0, left:0, zIndex:-1, backgroundColor:'rgb(255, 255, 255)'}} >
             Background Particles
         </canvas>
     );

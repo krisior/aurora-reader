@@ -23,7 +23,7 @@
 
 button {
     
-    border: 3px solid #535353;
+    border: 3px solid rgb(83, 83, 83);
     background-color: rgba(255, 255, 255, 0.6);
 
     display: inline-block;
@@ -34,7 +34,7 @@ button {
     text-align: center;
     width: 250px;
 
-    color: #111111;
+    color: rgb(22, 22, 22);
     outline: none;
     box-shadow: 0 0 0 0 black;
 
@@ -47,7 +47,7 @@ button {
 }
 
 button.register-button-box-1 {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     background-color: rgba(83, 83, 83, 0.8);
     border: 3px solid rgba(255, 255, 255, 0);
     
@@ -55,10 +55,10 @@ button.register-button-box-1 {
 
 button.register-button-box-1:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    color: #111111;
-    border: 3px solid #3498db;
+    color: rgb(22, 22, 22);
+    border: 3px solid rgb(52, 152, 219);
 }
 
 button.login-button-box-1:hover {
-    border-color: #3498db;
+    border-color: rgb(52, 152, 219);
 }
