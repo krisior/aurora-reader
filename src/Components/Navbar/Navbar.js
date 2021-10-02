@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import react, { useState, Fragment } from "react";
 import { CSSTransition } from 'react-transition-group'
 
 import './Navbar.css'
@@ -6,17 +6,23 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faCog, faInfoCircle, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-import logoPrimary from '../Navbar/logo.png'
-
+import { useDarkMode } from '../../Styles/useDarkMode';
 
 import styled from "styled-components";
+import { Component } from "react";
+
+import logoLightMode from "../../Icons/logo_lightmode.svg"
+import logoDarkMode from "../../Icons/logo_darkmode.svg"
 
 export const Navbar = (props) => {
+
+    const [ theme, setTheme ] = useDarkMode();
+    
     return (
         <nav className="navbar">
             <ul className="navbar-logo">
-                <a href="./MainEntry.js"><img src={ logoPrimary } alt="logo-primary"/></a>
-            </ul>
+                <a href="./MainEntry.js" className="logo-button"><img src={logoLightMode} alt="logo"/></a>
+            </ul> 
             <ul className="navbar-nav"> { props.children } </ul>
         </nav>
     );
@@ -42,8 +48,8 @@ export const DarkModeToggle = ({ theme, toggleTheme }) => {
     return (
         <li className="nav-item">
             <a href="#" className="icon-button">
-                <div onClick={toggleTheme}>
-                    { theme === 'light' 
+                <div onClick={ toggleTheme }>
+                    { theme === 'light'
                     ? 
                     <FontAwesomeIcon icon={faSun} />
                     : 
@@ -53,8 +59,6 @@ export const DarkModeToggle = ({ theme, toggleTheme }) => {
         </li>
     )
 }
-
-
 
 export const DropdownMenu1 = () => {
 
@@ -151,7 +155,7 @@ export const DropdownMenu1 = () => {
                                     Ula Mądzielewska<br /><br />
                                     Pola Nadarzewska<br /><br />
                                     Sandra Gołuńska<br /><br />
-                                    Krzysztof Wiłnicki
+                                    Krzysiek Wiłnicki
                                 </span>
                             </p>
                         </div></a>

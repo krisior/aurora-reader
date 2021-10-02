@@ -80,7 +80,15 @@ const BgParticles = () => {
 
     
     return(
-        <canvas className="background-particles-background" id="particle-canvas" style={{position:'fixed', top:0, right:0, bottom:0, left:0, zIndex:-1}} >
+        <canvas className="background-particles-background" id="particle-canvas" style={
+            {
+                position:'fixed', 
+                top: 0,
+                right: 0,
+                bottom: 0, 
+                left: 0,
+                zIndex: -1}} 
+        >
             Background Particles
         </canvas>
     );
