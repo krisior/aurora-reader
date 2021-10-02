@@ -1,37 +1,48 @@
 
 import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
+
+import styled, { ThemeProvider } from 'styled-components';
+
 import '../Pages/MainEntry.css';
+import { useDarkMode } from '../Styles/useDarkMode';
+import { GlobalStyles, lightTheme, darkTheme } from '../Styles/globalStyles'
 
 import BgParticles from '../Components/BgParticles/BgParticles';
 import LoginRegister from '../Components/LoginRegisterForm/LoginRegisterForm';
 import WelcomeContainer from '../Components/WelcomeContainer/WelcomeContainer';
-import { Navbar, NavItem, DropdownMenu1 } from '../Components/Navbar/Navbar';
+import { Navbar, NavItem, DropdownMenu1, DarkModeToggle } from '../Components/Navbar/Navbar';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV, faAdjust} from '@fortawesome/free-solid-svg-icons'
+import { faEllipsisV, faAdjust } from '@fortawesome/free-solid-svg-icons'
+
 
 
 function MainEntry() {
+  
+  const [ theme, toggleTheme ] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
   return (
-    <div className="MainEntry">
-      
-      <BgParticles backgroundColor={true}/>{/*already set as background*/}
+    <ThemeProvider theme={ themeMode }>
+      <div className="MainEntry">
+        <GlobalStyles /> {/* themes */} 
 
-      {/*<Header />*/}
+        <BgParticles /> {/* already set as background */}        
 
-      <Navbar> {/* ltr */ }
-        
-        <NavItem icon={<FontAwesomeIcon icon={faAdjust} />} />
-        <NavItem icon={<FontAwesomeIcon icon={faEllipsisV} />}>
-          <DropdownMenu1 />
-        </NavItem>
-      </Navbar>
+        <Navbar> {/* ltr */ }
+          
+          <DarkModeToggle theme={theme} toggleTheme={toggleTheme}/>
+          <NavItem icon={<FontAwesomeIcon icon={faEllipsisV} />}>
+            <DropdownMenu1 />
+          </NavItem>
+        </Navbar>
 
-      <WelcomeContainer />
+        <WelcomeContainer />
 
-      <LoginRegister />
-    </div>
+        <LoginRegister />
+      </div>
+    </ThemeProvider>
   );
 }
 

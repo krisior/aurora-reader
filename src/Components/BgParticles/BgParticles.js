@@ -2,7 +2,6 @@ import React, {useLayoutEffect} from 'react';
 
 import './BgParticles.css'
 
-
 const BgParticles = () => {
 
     useLayoutEffect(()=>{
@@ -19,7 +18,6 @@ const BgParticles = () => {
             y: undefined,
         }
 
-       
         class Particle {
             constructor(){
                 this.x = mouse.x;
@@ -82,7 +80,7 @@ const BgParticles = () => {
 
     
     return(
-        <canvas id="particle-canvas" style={{position:'fixed', top:0, right:0, bottom:0, left:0, zIndex:-1, backgroundColor:'rgb(255, 255, 255)'}} >
+        <canvas className="background-particles-background" id="particle-canvas" style={{position:'fixed', top:0, right:0, bottom:0, left:0, zIndex:-1}} >
             Background Particles
         </canvas>
     );

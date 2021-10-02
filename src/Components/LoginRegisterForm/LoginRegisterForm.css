@@ -5,7 +5,7 @@
     padding: 0px;
     
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
@@ -36,7 +36,7 @@ button {
 
     color: rgb(22, 22, 22);
     outline: none;
-    box-shadow: 0 0 0 0 black;
+    /*box-shadow: 0 0 0 0 black;*/
 
     border-radius: 50px;
     transition: ease-out 0.2s;

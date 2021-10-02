@@ -4,12 +4,19 @@ import { CSSTransition } from 'react-transition-group'
 import './Navbar.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight, faAngleLeft, faCog, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faCog, faInfoCircle, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+
+import logoPrimary from '../Navbar/logo.png'
+
+
+import styled from "styled-components";
 
 export const Navbar = (props) => {
     return (
         <nav className="navbar">
-            
+            <ul className="navbar-logo">
+                <a href="./MainEntry.js"><img src={ logoPrimary } alt="logo-primary"/></a>
+            </ul>
             <ul className="navbar-nav"> { props.children } </ul>
         </nav>
     );
@@ -17,7 +24,7 @@ export const Navbar = (props) => {
 
 export const NavItem = (props) => {
 
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);        
 
     return(
         <li className="nav-item">
@@ -29,6 +36,25 @@ export const NavItem = (props) => {
         </li>
     );
 }
+
+export const DarkModeToggle = ({ theme, toggleTheme }) => {
+    
+    return (
+        <li className="nav-item">
+            <a href="#" className="icon-button">
+                <div onClick={toggleTheme}>
+                    { theme === 'light' 
+                    ? 
+                    <FontAwesomeIcon icon={faSun} />
+                    : 
+                    <FontAwesomeIcon icon={faMoon} /> }
+                </div>
+            </a>
+        </li>
+    )
+}
+
+
 
 export const DropdownMenu1 = () => {
 
@@ -129,9 +155,6 @@ export const DropdownMenu1 = () => {
                                 </span>
                             </p>
                         </div></a>
-                    </DropdownItem>
-                    <DropdownItem>
-                        ...
                     </DropdownItem>
                     
                 </div>
