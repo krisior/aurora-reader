@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
       
-      .background-particles-background {
+      #particle-canvas {
             background-color:       ${({ theme }) => theme.backgroundParticlesBackgroundColor };
       }
 
