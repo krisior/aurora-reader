@@ -11,8 +11,6 @@ import { useDarkMode } from '../../Styles/useDarkMode';
 import styled from "styled-components";
 import { Component } from "react";
 
-import logoLightMode from "../../Icons/logo_lightmode.svg"
-import logoDarkMode from "../../Icons/logo_darkmode.svg"
 
 export const Navbar = (props) => {
 
@@ -21,7 +19,7 @@ export const Navbar = (props) => {
     return (
         <nav className="navbar">
             <ul className="navbar-logo">
-                <a href="./MainEntry.js" className="logo-button"><img src={logoLightMode} alt="logo"/></a>
+                <a href="./MainEntry.js" className="logo-button" />
             </ul> 
             <ul className="navbar-nav"> { props.children } </ul>
         </nav>
@@ -51,9 +49,9 @@ export const DarkModeToggle = ({ theme, toggleTheme }) => {
                 <div onClick={ toggleTheme }>
                     { theme === 'light'
                     ? 
-                    <FontAwesomeIcon icon={faSun} />
+                    <FontAwesomeIcon icon={faMoon} />
                     : 
-                    <FontAwesomeIcon icon={faMoon} /> }
+                    <FontAwesomeIcon icon={faSun} />}
                 </div>
             </a>
         </li>
@@ -93,10 +91,10 @@ export const DropdownMenu1 = () => {
                 >
                 
                 <div className="menu">
-                    <DropdownItem
+                    {/*<DropdownItem
                         rightIcon={<FontAwesomeIcon icon={faCog} />} goToMenu="settings">
                         <p>settings</p>
-                    </DropdownItem>
+                    </DropdownItem>*/}
 
                     <DropdownItem
                         rightIcon={<FontAwesomeIcon icon={faInfoCircle} />} goToMenu="about">
@@ -109,7 +107,7 @@ export const DropdownMenu1 = () => {
             <CSSTransition 
                 in={activeMenu === 'settings'} 
                 unmountOnExit 
-                timeout={150}
+                timeout={500}
                 classNames="menu-secondary"
                 onEnter={calcHeight}
                 >
@@ -133,7 +131,7 @@ export const DropdownMenu1 = () => {
             <CSSTransition 
                 in={activeMenu === 'about'} 
                 unmountOnExit 
-                timeout={150}
+                timeout={500}
                 classNames="menu-secondary"
                 onEnter={calcHeight}
                 >

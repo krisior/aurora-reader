@@ -4,7 +4,7 @@ import './LoginRegisterForm.css';
 const LoginRegister = () => {
     
     return(
-        <form className="box-1" action="./App.js" method="post">
+        <form className="box-1" method="post">
             
             <button className="login-button-box-1" name="" value="Login">login</button>
             <div className="space-divider" />

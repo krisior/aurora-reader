@@ -17,7 +17,12 @@ export const GlobalStyles = createGlobalStyle`
       }
 
       .logo-button {
+            background-image:       ${({ theme }) => theme.navbarLogoButtonImage };
             background-color:       ${({ theme }) => theme.navbarLogoButtonBackgroundColor };
+      }
+
+      .logo-button:hover {
+            background-color:       ${({ theme }) => theme.navbarLogoButtonBackgroundColorHover };
       }
 
       .icon-button {
@@ -87,6 +92,39 @@ export const GlobalStyles = createGlobalStyle`
       .aurora-name {
             color:                  ${({ theme }) => theme.welcomeTextColor };
       }
+
+      .aurora-quote-animation {
+            --colorSecond:          ${({ theme }) => theme.welcomeAuroraQuoteAnimationSecondColor };
+      
+      }
+
+      /*LOGINFORM*/
+        
+      .box-1-loginform input[type = "text"], .box-1-loginform input[type = "password"] {
+            
+            border:                 ${({ theme }) => theme.loginFormInputBorder };
+            background-color:       ${({ theme }) => theme.loginFormInputBackgroundColor };
+            color:                  ${({ theme }) => theme.loginFormInputColor };
+      }
+        
+      .box-1-loginform input[type = "text"]:focus, .box-1-loginform input[type = "password"]:focus {
+            border-color:           ${({ theme }) => theme.loginFormInputBorderColorHover };
+      }
+
+      .box-1-loginform input[type = "text"]::placeholder, .box-1-loginform input[type = "password"]::placeholder {
+            color:                  ${({ theme }) => theme.loginFormPlaceholder }
+      }
+        
+      button.loginform {
+            border:                 ${({ theme }) => theme.loginFormButtonBorder };
+            background-color:       ${({ theme }) => theme.loginFormButtonBackgroundColor };
+            color:                  ${({ theme }) => theme.loginFormButtonColor };
+      }
+        
+      button.loginform:hover {
+            border-color:           ${({ theme }) => theme.loginFormButtonBorderColorHover };
+      }
+
 `;
 
 export const lightTheme = {
@@ -103,7 +141,9 @@ export const lightTheme = {
       navbarIconButtonBackgroundColorHover:                 'rgba(255, 255, 255, 0.6)',
       navbarIconButtonSVGFill:                              'rgb(22, 22, 22)',
 
-      navbarLogoButtonBackgroundColor:                      'rgba(231, 231, 231, 0.9)',
+      navbarLogoButtonImage:                                'url(https://raw.githubusercontent.com/krisior/aurora-reader/main/src/Icons/logo_lightmode.svg)',
+      navbarLogoButtonBackgroundColor:                      'rgba(246, 246, 246, 0.95)',
+      navbarLogoButtonBackgroundColorHover:                 'rgba(255, 255, 255, 0.8)',
       
       navbarDropdownBackgroundColor:                        'rgb(231, 231, 231)',
 
@@ -134,6 +174,22 @@ export const lightTheme = {
       /*WELCOME*/
 
       welcomeTextColor:                                     'rgb(22, 22, 22)',
+      welcomeAuroraQuoteAnimationSecondColor:               'rgb(22, 22, 22)',
+
+      /*LOGINFORM*/
+
+      loginFormInputBorder:                                 '3px solid rgb(83, 83, 83)',
+      loginFormInputBackgroundColor:                        'rgba(255, 255, 255, 0.6)',
+      loginFormInputColor:                                  'rgb(22, 22, 22)',
+
+      loginFormPlaceholder:                                 'rgba(22, 22, 22, 0.6)',
+      loginFormInputBorderColorHover:                       'rgb(52, 152, 219)',
+
+      loginFormButtonBorder:                                '3px solid rgb(83, 83, 83)',
+      loginFormButtonBackgroundColor:                       'rgba(255, 255, 255, 0.6)',
+      loginFormButtonColor:                                 'rgb(22, 22, 22)',
+
+      loginFormButtonBorderColorHover:                      'rgb(52, 152, 219)',
 
 };
 
@@ -151,8 +207,10 @@ export const darkTheme = {
       navbarIconButtonBackgroundColorHover:                 'rgba(160, 160, 160, 0.9)',
       navbarIconButtonSVGFill:                              'rgb(246, 246, 246)',
       
-      navbarLogoButtonBackgroundColor:                      'rgba(83, 83, 83, 0.9)',
-
+      navbarLogoButtonImage:                                'url(https://raw.githubusercontent.com/krisior/aurora-reader/main/src/Icons/logo_darkmode.svg)',
+      navbarLogoButtonBackgroundColor:                      'rgba(44, 44, 44, 0.6)',
+      navbarLogoButtonBackgroundColorHover:                 'rgba(80, 80, 80, 0.8)',
+  
       navbarDropdownBackgroundColor:                        'rgb(83, 83, 83)',
 
       navbarDropdownMenuItemBackgroundColorHover:           'rgba(110, 110, 110, 0.8)',
@@ -165,14 +223,14 @@ export const darkTheme = {
       /*LOGIN_REGISTER*/
 
       loginRegisterBoxBackgroundColor:                      'transparent',
-      loginRegisterButtonBorder:                            '3px solid rgb(170, 170, 170)',
+      loginRegisterButtonBorder:                            '3px solid rgba(83, 83, 83, 0.7)',
       loginRegisterButtonBackgroundColor:                   'rgba(83, 83, 83, 0.9)',
       loginRegisterButtonColor:                             'rgb(246, 246, 246)',
 
       loginRegisterLoginButtonBorderColorHover:             'rgb(52, 152, 219)',
 
       loginRegisterRegisterButtonBorder:                    '3px solid rgba(255, 255, 255, 0)',
-      loginRegisterRegisterButtonBackgroundColor:           'rgba(246, 246, 246, 0.8)',
+      loginRegisterRegisterButtonBackgroundColor:           'rgba(255, 255, 255, 0.8)',
       loginRegisterRegisterButtonColor:                     'rgb(11, 11, 11)',
 
       loginRegisterRegisterButtonBorderHover:               '3px solid rgb(52, 152, 219)',
@@ -182,4 +240,20 @@ export const darkTheme = {
       /*WELCOME*/
 
       welcomeTextColor:                                     'rgb(246, 246, 246)',
+      welcomeAuroraQuoteAnimationSecondColor:               'rgb(246, 246, 246)',
+
+      /*LOGINFORM*/
+
+      loginFormInputBorder:                                 '3px solid rgb(83, 83, 83)',
+      loginFormInputBackgroundColor:                        'rgb(83, 83, 83)',
+      loginFormInputColor:                                  'rgb(246, 246, 246)',
+
+      loginFormPlaceholder:                                 'rgb(246, 246, 246, 0.6)',
+      loginFormInputBorderColorHover:                       'rgb(52, 152, 219)',
+
+      loginFormButtonBorder:                                '3px solid rgba(22, 22, 22, 0.6)',
+      loginFormButtonBackgroundColor:                       'rgba(83, 83, 83, 0.9)',
+      loginFormButtonColor:                                 'rgb(246, 246, 246)',
+
+      loginFormButtonBorderColorHover:                      'rgb(52, 152, 219)',
 };

@@ -49,32 +49,30 @@ a {
 }
 
 .logo-button {
-    --button-size: calc(70px * 0.8);
+    --button-size: calc(70px * 0.7);
     width: var(--button-size);
     height: var(--button-size);
 
     background-color: rgba(231, 231, 231, 0.9);
     border-radius: 10%;
     padding: 1px;
-    
-    margin: 8px;
+    padding-bottom: 2px;
+
+    margin: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    transition: 0.3s;
+    transition: 0.2s;
 
-}
-
-.logo-button img {
-    width: 60px;
-    height: 60px;
-    padding: 1px;   
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 50%;
+    
 }
 
 .logo-button:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    color: rgb(48, 136, 194);
 }
 
 .nav-item {
@@ -105,18 +103,13 @@ a {
 .icon-button:hover {
     background-color: rgba(255, 255, 255, 0.6);
     color: rgb(48, 136, 194);
-    
 }
-
 
 .icon-button svg {
     fill: rgb(22, 22, 22);
     width: 20px;
     height: 20px;
 }
-
-
-
 
 .dropdown {
     position: absolute;
