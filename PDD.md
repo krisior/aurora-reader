@@ -33,10 +33,10 @@ The progress-stage interpretation:
 
 | Website element - Front-end | Progress | Target finish date | Person responsible | Finish Date | 
 |-|:-:|:-:|:-:|:-:| 
-| Setting up react.js to upcoming features |❌|30.09.2021|Ula, Krzysiu| --- |   
+| Setting up react.js to upcoming features |✔|30.09.2021|Ula, Krzysiu| 24.09.2021 |   
 | Design of the project (both desktop and mobile) (Figma) |✔|30.09.2021|Ula| 23.09.2021 | 
 | Design of the logo: draw-version |✔|10.10.2021|Sandra, Pola| 04.10.2021 | 
-| Design of the logo: convert to a vector version |❌|17.10.2021|Krzysiu| --- | 
+| Design of the logo: convert to a vector version |🚧|17.10.2021|Krzysiu| --- | 
 | Design of the icons |❌|17.10.2021|Pola| --- | 
 | Design of the background: particles |✔|29.09.2021|Ula| 29.09.2021 | 
 | --- |❌|31.10.2021|---| --- | 
