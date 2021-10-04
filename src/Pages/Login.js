@@ -28,13 +28,13 @@ function LoginEntry() {
       <div className="LoginEntry">
             <GlobalStyles /> {/* themes */} 
 
-            <BgParticles /> {/* already set as background */}        
-
+            <BgParticles /> {/* already set as background */}
+            
             <Navbar> {/* ltr */ }
-          
-            <DarkModeToggle theme={theme} toggleTheme={toggleTheme}/>
+            
+              <DarkModeToggle theme={theme} toggleTheme={toggleTheme}/>
 
-            <LoginForm />
+              <LoginForm />
 
             </Navbar>
       </div>

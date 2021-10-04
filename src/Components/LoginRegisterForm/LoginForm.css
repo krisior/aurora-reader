@@ -50,10 +50,34 @@
     color: rgb(22, 22, 22);
 }
 
-.box-1-loginform input[type = "text"]:focus, .box-1-loginform input[type = "password"]:focus {
+.box-1-loginform input[placeholder="e-mail"]:focus {
     width: 325px;
     border-color: rgb(52, 152, 219);
 }
+
+.box-1-loginform input[type = "password"]:focus {
+    border-color: rgb(52, 152, 219);
+}
+.new-to-aurora-1 {
+    width: 250px;
+    font-size: 16px;
+    display: block;
+    
+    margin: 10px auto;
+
+    transform: translate(1%, 10%);
+}
+
+.new-to-aurora-1 a{
+    font-weight: 1000;
+    transition: 0.1s ease;
+}
+
+.new-to-aurora-1 a:hover{
+    font-weight: 1000;
+    color: rgb(52, 152, 219);
+}
+
 
 .password-forgot-1 {
     width: 200px;
@@ -61,18 +85,14 @@
     display: block;
     
     margin: 20px auto;
-    transform: translate(50%, -50%);
+    transform: translate(30%, -70%);
 }
 
-.new-to-aurora-1 {
-    width: 250px;
-    font-size: 14px;
-    display: block;
-    
-    margin: 10px auto;
-
-    transform: translate(20%, 10%);
+.password-forgot-1 a:hover {
+    transition: 0.1s ease;
+    color: rgb(52, 152, 219);
 }
+
 
 button.loginform {
     
@@ -104,3 +124,38 @@ button.loginform:hover {
     border-color: rgb(52, 152, 219);
 }
 
+.show-password-login {
+    position: absolute;
+
+    color: rgb(22, 22, 22);
+    
+    left: 72%;
+    top: 33.5%;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.1s ease-out;
+}
+
+.show-password-login:hover {
+    color: rgb(52, 152, 219);
+}
+
+.space-divider {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
+
+.caps-lock {
+    position: absolute;
+    top: -70%;
+    display: flex;
+    width: 150px;
+     
+    color: rgb(252, 74, 74);
+    font-size: 12px;
+    font-weight: 900;
+
+}

@@ -64,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
       .box-1 {
             background-color:       ${({ theme }) => theme.loginRegisterBoxBackgroundColor };
       }        
-        
+      
       button {
             border:                 ${({ theme }) => theme.loginRegisterButtonBorder };
             background-color:       ${({ theme }) => theme.loginRegisterButtonBackgroundColor };
@@ -124,6 +124,54 @@ export const GlobalStyles = createGlobalStyle`
       button.loginform:hover {
             border-color:           ${({ theme }) => theme.loginFormButtonBorderColorHover };
       }
+
+      .new-to-aurora-1 {
+            color:                  ${({ theme }) => theme.loginFormNewToAuroraColor }
+      }
+
+      .show-password-login {        
+            color:                  ${({ theme }) => theme.registerFormShowPassword };
+        }
+        
+      
+      /*REGISTERFORM*/
+        
+      .box-1-registerform input[type = "text"], .box-1-registerform input[type = "password"] {
+            
+            border:                 ${({ theme }) => theme.registerFormInputBorder };
+            background-color:       ${({ theme }) => theme.registerFormInputBackgroundColor };
+            color:                  ${({ theme }) => theme.registerFormInputColor };
+      }
+        
+      .box-1-registerform input[type = "text"]:focus, .box-1-registerform input[type = "password"]:focus {
+            border-color:           ${({ theme }) => theme.registerFormInputBorderColorHover };
+      }
+
+      .box-1-registerform input[type = "text"]::placeholder, .box-1-registerform input[type = "password"]::placeholder {
+            color:                  ${({ theme }) => theme.registerFormPlaceholder }
+      }
+        
+      button.registerform {
+            border:                 ${({ theme }) => theme.registerFormButtonBorder };
+            background-color:       ${({ theme }) => theme.registerFormButtonBackgroundColor };
+            color:                  ${({ theme }) => theme.registerFormButtonColor };
+      }
+        
+      button.registerform:hover {
+            border-color:           ${({ theme }) => theme.registerFormButtonBorderColorHover };
+      }
+
+      .already-an-account {
+            color:                  ${({ theme }) => theme.registerFormAlreadyAccountColor };
+      }
+
+      .show-password {        
+            color:                  ${({ theme }) => theme.registerFormShowPassword };
+      }
+
+      /*MAINPAGE*/
+
+      
 
 `;
 
@@ -191,6 +239,30 @@ export const lightTheme = {
 
       loginFormButtonBorderColorHover:                      'rgb(52, 152, 219)',
 
+      loginFormNewToAuroraColor:                            'rgb(22, 22, 22)',
+
+      /*REGISTERFORM*/
+
+      registerFormInputBorder:                              '3px solid rgb(83, 83, 83)',
+      registerFormInputBackgroundColor:                     'rgba(255, 255, 255, 0.6)',
+      registerFormInputColor:                               'rgb(22, 22, 22)',
+
+      registerFormPlaceholder:                              'rgba(22, 22, 22, 0.6)',
+      registerFormInputBorderColorHover:                    'rgb(52, 152, 219)',
+
+      registerFormButtonBorder:                             '3px solid rgb(83, 83, 83)',
+      registerFormButtonBackgroundColor:                    'rgba(255, 255, 255, 0.6)',
+      registerFormButtonColor:                              'rgb(22, 22, 22)',
+
+      registerFormButtonBorderColorHover:                   'rgb(52, 152, 219)',
+
+      registerFormAlreadyAccountColor:                      'rgb(22, 22, 22)',
+
+      registerFormShowPassword:                             'rgb(22, 22, 22)',
+
+      /*MAINPAGE*/
+
+      
 };
 
 export const darkTheme = {
@@ -219,7 +291,7 @@ export const darkTheme = {
 
       smallAboutTextGradientBackgroundColor:                'rgb(22, 22, 22)',
       smallAboutTextGradientBackgroundImage:                'linear-gradient(-45deg, rgb(255, 255, 255), rgba(100, 195, 255, 0.9))',
-
+      
       /*LOGIN_REGISTER*/
 
       loginRegisterBoxBackgroundColor:                      'transparent',
@@ -256,4 +328,29 @@ export const darkTheme = {
       loginFormButtonColor:                                 'rgb(246, 246, 246)',
 
       loginFormButtonBorderColorHover:                      'rgb(52, 152, 219)',
+
+      loginFormNewToAuroraColor:                            'rgb(246, 246, 246)',
+
+      /*REGISTERFORM*/
+
+      registerFormInputBorder:                              '3px solid rgb(83, 83, 83)',
+      registerFormInputBackgroundColor:                     'rgb(83, 83, 83)',
+      registerFormInputColor:                               'rgb(246, 246, 246)',
+
+      registerFormPlaceholder:                              'rgb(246, 246, 246, 0.6)',
+      registerFormInputBorderColorHover:                    'rgb(52, 152, 219)',
+
+      registerFormButtonBorder:                             '3px solid rgba(22, 22, 22, 0.6)',
+      registerFormButtonBackgroundColor:                    'rgba(83, 83, 83, 0.9)',
+      registerFormButtonColor:                              'rgb(246, 246, 246)',
+
+      registerFormButtonBorderColorHover:                   'rgb(52, 152, 219)',
+
+      registerFormAlreadyAccountColor:                      'rgb(246, 246, 246)',
+
+      registerFormShowPassword:                             'rgb(246, 246, 246)',
+
+      /*MAINPAGE*/
+
+      
 };
