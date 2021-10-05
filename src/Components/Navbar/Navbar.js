@@ -7,7 +7,7 @@ import { CSSTransition } from 'react-transition-group'
 import './Navbar.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft, faCog, faInfoCircle, faMoon, faSun, faPalette, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight, faCog, faInfoCircle, faMoon, faSun, faPalette, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 import { faUser } from '@fortawesome/fontawesome-free-regular';
 
@@ -265,7 +265,7 @@ export const DropdownMenuMain = () => {
                 
                 <div className="menu">
                     <DropdownItem
-                        leftIcon={<FontAwesomeIcon icon={faAngleLeft} />} goToMenu="settings">
+                        rightIcon={<FontAwesomeIcon icon={faAngleRight} />} goToMenu="settings">
                                 
                     </DropdownItem>
                     <DropdownItem >
@@ -285,7 +285,7 @@ export const DropdownMenuMain = () => {
                 
                 <div className="menu">
                     <DropdownItem
-                        leftIcon={<FontAwesomeIcon icon={faAngleLeft} />} goToMenu="settings">
+                        rightIcon={<FontAwesomeIcon icon={faAngleRight} />} goToMenu="settings">
                                 
                     </DropdownItem>
                     <DropdownItem >
