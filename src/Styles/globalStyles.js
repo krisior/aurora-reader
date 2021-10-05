@@ -100,18 +100,18 @@ export const GlobalStyles = createGlobalStyle`
 
       /*LOGINFORM*/
         
-      .box-1-loginform input[type = "text"], .box-1-loginform input[type = "password"] {
+      .box-1-loginform input[type = "text"], .box-1-loginform input[type = "password"], .box-1-loginform input[type = "email"] {
             
             border:                 ${({ theme }) => theme.loginFormInputBorder };
             background-color:       ${({ theme }) => theme.loginFormInputBackgroundColor };
             color:                  ${({ theme }) => theme.loginFormInputColor };
       }
         
-      .box-1-loginform input[type = "text"]:focus, .box-1-loginform input[type = "password"]:focus {
+      .box-1-loginform input[type = "text"]:focus, .box-1-loginform input[type = "password"]:focus, .box-1-loginform input[type = "email"]:focus {
             border-color:           ${({ theme }) => theme.loginFormInputBorderColorHover };
       }
 
-      .box-1-loginform input[type = "text"]::placeholder, .box-1-loginform input[type = "password"]::placeholder {
+      .box-1-loginform input[type = "text"]::placeholder, .box-1-loginform input[type = "password"]::placeholder, .box-1-loginform input[type = "email"]::placeholder {
             color:                  ${({ theme }) => theme.loginFormPlaceholder }
       }
         
@@ -136,18 +136,18 @@ export const GlobalStyles = createGlobalStyle`
       
       /*REGISTERFORM*/
         
-      .box-1-registerform input[type = "text"], .box-1-registerform input[type = "password"] {
+      .box-1-registerform input[type = "text"], .box-1-registerform input[type = "password"], .box-1-registerform input[type = "email"] {
             
             border:                 ${({ theme }) => theme.registerFormInputBorder };
             background-color:       ${({ theme }) => theme.registerFormInputBackgroundColor };
             color:                  ${({ theme }) => theme.registerFormInputColor };
       }
         
-      .box-1-registerform input[type = "text"]:focus, .box-1-registerform input[type = "password"]:focus {
+      .box-1-registerform input[type = "text"]:focus, .box-1-registerform input[type = "password"]:focus, .box-1-registerform input[type = "email"]:focus {
             border-color:           ${({ theme }) => theme.registerFormInputBorderColorHover };
       }
 
-      .box-1-registerform input[type = "text"]::placeholder, .box-1-registerform input[type = "password"]::placeholder {
+      .box-1-registerform input[type = "text"]::placeholder, .box-1-registerform input[type = "password"]::placeholder, .box-1-registerform input[type = "email"]::placeholder {
             color:                  ${({ theme }) => theme.registerFormPlaceholder }
       }
         

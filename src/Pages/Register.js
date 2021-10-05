@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import './BasicInfo.css';
 import { useDarkMode } from '../Styles/useDarkMode';
@@ -9,12 +9,12 @@ import { GlobalStyles, lightTheme, darkTheme } from '../Styles/globalStyles'
 import BgParticles from '../Components/BgParticles/BgParticles';
 import { RegisterForm } from '../Components/LoginRegisterForm/RegisterForm';
 
-import { Navbar, NavItem, DropdownMenu1, DarkModeToggle } from '../Components/Navbar/Navbar';
+import { Navbar, /*NavItem, DropdownMenu1,*/ DarkModeToggle } from '../Components/Navbar/Navbar';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
-function RegisterEntry() {
+function RegisterEntry(props) {
   
   const [ theme, toggleTheme ] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -31,7 +31,7 @@ function RegisterEntry() {
           
             <DarkModeToggle theme={theme} toggleTheme={toggleTheme}/>
 
-            <RegisterForm />
+            <RegisterForm {...props} />
 
             </Navbar>
       </div>

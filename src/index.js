@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import MainEntry from './Pages/MainEntry';
-import LoginEntry from './Pages/Login';
-import RegisterEntry from './Pages/Register'
-import MainPage from './Pages/MainPage'
+import App from './App';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainPage />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
