@@ -1,15 +1,20 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import './LoginRegisterForm.css';
 
 const LoginRegister = () => {
     
     return(
-        <form className="box-1" method="post">
-            
-            <button className="login-button-box-1" name="" value="Login">login</button>
+        <div className="box-1">
+            <Link to="/login">
+                <button className="login-button-box-1" >login</button>
+            </Link>
             <div className="space-divider" />
-            <button className="register-button-box-1" name="" value="Register">register</button>
-        </form>
+            <Link to="/register">
+                <button className="register-button-box-1" >register</button>
+            </Link>
+        </div>
     );
 
 }

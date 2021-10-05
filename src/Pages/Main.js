@@ -1,7 +1,6 @@
+import React from 'react';
 
-import React, { useState } from 'react';
-
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import './BasicInfo.css';
 import { useDarkMode } from '../Styles/useDarkMode';
@@ -18,7 +17,7 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
 
 
-function MainEntry() {
+function Main() {
   
   const [ theme, toggleTheme ] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -31,7 +30,7 @@ function MainEntry() {
         <BgParticles /> {/* already set as background */}        
 
         
-        <Navbar> {/* ltr */ }
+        <Navbar> {/* ltr */}
           <span className="navbar-title">aurora<span style={{color: "rgb(52, 152, 219)"}}>reader</span></span>
           <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
           <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />}>
@@ -51,4 +50,4 @@ function MainEntry() {
 
 
 
-export default MainEntry;
+export default Main;

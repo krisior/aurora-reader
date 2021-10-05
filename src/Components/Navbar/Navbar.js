@@ -1,4 +1,7 @@
-import react, { useState, Fragment } from "react";
+import { useState} from "react";
+import {Link} from "react-router-dom";
+
+
 import { CSSTransition } from 'react-transition-group'
 
 import './Navbar.css'
@@ -6,21 +9,16 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faCog, faInfoCircle, faMoon, faSun, faPalette, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
-import { useDarkMode } from '../../Styles/useDarkMode';
-
-import styled from "styled-components";
-import { Component } from "react";
-
 import { faUser } from '@fortawesome/fontawesome-free-regular';
 
 export const Navbar = (props) => {
 
-    const [ theme, setTheme ] = useDarkMode();
+    //const [ theme, setTheme ] = useDarkMode();
     
     return (
         <nav className="navbar">
             <ul className="navbar-logo">
-                <a href="./MainEntry.js" className="logo-button" />
+                <Link to="/" className="logo-button" />
             </ul>
 
             <ul className="navbar-nav"> { props.children } </ul>
@@ -34,10 +32,9 @@ export const NavItem = (props) => {
 
     return(
         <li className="nav-item">
-            <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+            <a href="" className="icon-button" onClick={() => setOpen(!open)}>
                 { props.icon }
             </a>
-
             { open && props.children }
         </li>
     );
@@ -47,7 +44,7 @@ export const DarkModeToggle = ({ theme, toggleTheme }) => {
     
     return (
         <li className="nav-item">
-            <a href="#" className="icon-button">
+            <a href="" className="icon-button">
                 <div onClick={ toggleTheme }>
                     { theme === 'light'
                     ? 
@@ -72,7 +69,7 @@ export const DropdownMenuIntro = () => {
 
     function DropdownItem(props) {
         return (
-            <a href="#" className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
+            <a href="" className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
                 <span className="icon-left">{ props.leftIcon }</span>
 
                 { props.children }

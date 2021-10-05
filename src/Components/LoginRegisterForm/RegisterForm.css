@@ -22,7 +22,7 @@
 
 }
 
-.box-1-registerform input[type = "text"], .box-1-registerform input[type = "password"] {
+.box-1-registerform input[type = "text"], .box-1-registerform input[type = "password"], .box-1-registerform input[type = "email"] {
     
     border: 3px solid rgb(83, 83, 83);
     background-color: rgba(255, 255, 255, 0.6);
@@ -47,11 +47,11 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.box-1-registerform input[type = "text"]::placeholder, .box-1-registerform input[type = "password"]::placeholder {
+.box-1-registerform input[type = "text"]::placeholder, .box-1-registerform input[type = "password"]::placeholder, .box-1-registerform input[type = "email"]::placeholder {
     color: rgb(22, 22, 22);
 }
 
-.box-1-registerform input[placeholder = "username"]:focus, .box-1-registerform input[placeholder = "e-mail"]:focus {
+.box-1-registerform input[placeholder = "username"]:focus, .box-1-registerform input[placeholder = "e-mail"]:focus{
     width: 325px;
     border-color: rgb(52, 152, 219);
 }

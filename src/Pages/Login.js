@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
 import './BasicInfo.css';
 import { useDarkMode } from '../Styles/useDarkMode';
@@ -9,15 +9,10 @@ import { GlobalStyles, lightTheme, darkTheme } from '../Styles/globalStyles'
 import BgParticles from '../Components/BgParticles/BgParticles';
 import LoginForm from '../Components/LoginRegisterForm/LoginForm';
 
-import { Navbar, NavItem, DropdownMenu1, DarkModeToggle } from '../Components/Navbar/Navbar';
+import { Navbar,DarkModeToggle } from '../Components/Navbar/Navbar';
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
-
-
-
-function LoginEntry() {
+function Login(props) {
   
   const [ theme, toggleTheme ] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -34,7 +29,7 @@ function LoginEntry() {
             
               <DarkModeToggle theme={theme} toggleTheme={toggleTheme}/>
 
-              <LoginForm />
+              <LoginForm {...props}/>
 
             </Navbar>
       </div>
@@ -45,4 +40,4 @@ function LoginEntry() {
 
 
 
-export default LoginEntry;
+export default Login;
