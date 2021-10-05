@@ -27,6 +27,7 @@ export const RegisterForm = (props) => {
       setInputs({ ...inputs, [e.target.name]: e.target.value });
     };
 
+    /*
     const onSubmitForm = async(e) =>{
         e.preventDefault();
         try {
@@ -50,6 +51,11 @@ export const RegisterForm = (props) => {
         }
     };
 
+    */
+
+    const onSubmitForm = () => {
+        props.setAuth(true);
+    }
 
 
 

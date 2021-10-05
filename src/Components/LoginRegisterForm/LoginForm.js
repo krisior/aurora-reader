@@ -22,6 +22,7 @@ const LoginForm = (props) => {
         setInputs({...inputs, [e.target.name]: e.target.value});
     };
 
+    /*
     const onSubmitForm = async(e)=>{
         e.preventDefault();
         try {
@@ -44,7 +45,11 @@ const LoginForm = (props) => {
             console.error(err.message);
         }
     }
+    */
 
+    const onSubmitForm = () => {
+        props.setAuth(true);
+    }
 
     const [passwordShown, setPasswordShown] = useState(false);
 

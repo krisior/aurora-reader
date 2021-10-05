@@ -15,7 +15,7 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 
 
 function Dashboard(props) {
-  
+  /*
   const [name, setName] = useState("");
 
     async function getName(){
@@ -38,13 +38,18 @@ function Dashboard(props) {
         getName()
     },[]);
 
+    
     const logout = (e) =>{
         e.preventDefault();
 
         localStorage.removeItem("token");
         props.setAuth(false);
     };
+    */
 
+    const logoutNoDB = (e) => {
+      props.setAuth(false);
+    }
 
   const [ theme, toggleTheme ] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -57,8 +62,8 @@ function Dashboard(props) {
           <BgParticles /> {/* already set as background */}        
 
           <Navbar> {/* ltr */ }
-            <span className="navbar-title">Hello {name}</span>
-            <button className='logout-btn' onClick={e=>logout(e)}>Log out</button> {/* << You can do whatever you want with this btn, just keep the onClick the same */}
+            <span className="navbar-title">Hello -name- </span>
+            <button className='logout-btn' onClick={e=>logoutNoDB(e)}>Log out</button> {/* << You can do whatever you want with this btn, just keep the onClick the same */}
 
 
             <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
