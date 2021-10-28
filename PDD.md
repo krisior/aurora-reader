@@ -29,8 +29,8 @@ The progress-stage interpretation:
 | Back-end (user authorization) |✔|30.09.2021|Ula|01.10.2021| 
 | Connection of the back-end functionalities to the front-end design: login, register|✔|9.10.2021|Ula|05.10.2021| 
 | Back-end (library) |✔|31.10.2021|Ula| 24.10.2021 | 
-| Connection of the back-end functionalities to the front-end design: library |❌|31.10.2021| Ula | --- | 
-| Back-end (file sending, including images) |🚧|31.10.2021|Ula| --- | 
+| Connection of the back-end functionalities to the front-end design: library |❌|10.11.2021| Ula | --- | 
+| Back-end (file sending, including images) |🚧|10.11.2021|Ula| --- | 
 | --- |❌|31.10.2021|---| --- | 
 | --- |❌|31.10.2021|---| --- | 
 | --- |❌|31.10.2021|---| --- | 
