@@ -50,7 +50,7 @@
     color: rgb(22, 22, 22);
 }
 
-.box-1-loginform input[placeholder="e-mail"]:focus {
+.box-1-loginform input[type="email"]:focus {
     width: 325px;
     border-color: rgb(52, 152, 219);
 }
@@ -150,7 +150,7 @@ button.loginform:hover {
 
 .caps-lock {
     position: absolute;
-    top: -70%;
+    left: 53%;
     display: flex;
     width: 150px;
      

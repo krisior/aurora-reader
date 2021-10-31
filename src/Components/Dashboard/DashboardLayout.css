@@ -1,0 +1,20 @@
+.dashboard-grid {
+      width: 55%;
+      margin: 0 auto;
+
+      margin-top: 5rem;
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+
+      border: 1px red solid;
+}
+
+.dashboard-item {
+      padding: 3rem;
+      text-align: center;
+      border: 1px blue solid;
+}

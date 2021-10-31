@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 ul {
@@ -10,6 +11,7 @@ ul {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
   
 a {
@@ -28,6 +30,8 @@ a {
 
     font-size: 20px;
     border: 0;
+
+    
 }
 
 .navbar-nav {
@@ -37,6 +41,8 @@ a {
     display: flex;
     justify-content: flex-end;
     float: right;
+
+    
 }
 
 .navbar-logo {
@@ -75,6 +81,24 @@ a {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
+
+.logo-button::after {
+    content: "aurorareader";
+    transform: translateX(40%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+    z-index: -1;
+}
+
+
+.logo-button:hover::after {
+    content: "aurorareader";
+    transform: translateX(90%);
+    opacity: 1;
+}
+
+
 .nav-item {
     width: calc(70px * 0.8);
     display: flex;
@@ -90,6 +114,7 @@ a {
     background-color: rgba(231, 231, 231, 0.9);
     border-radius: 50%;
     padding: 5px;
+    border: 0;
     
     margin: 2px;
     display: flex;
@@ -98,6 +123,8 @@ a {
 
     transition: 0.3s;
     /*border: 2px solid white;*/
+
+    cursor: pointer;
 }
 
 .icon-button:hover {
@@ -109,6 +136,10 @@ a {
     fill: rgb(22, 22, 22);
     width: 20px;
     height: 20px;
+}
+
+div.logout-button {
+    padding-top: 10px;
 }
 
 .dropdown {
@@ -127,7 +158,6 @@ a {
     transition: height 0.18s ease;
 }
 
-
 .menu-item {
     /*height: 50px;*/
     display: flex;
@@ -136,6 +166,8 @@ a {
     border-radius: 7px;
     transition: background 0.18s;
     padding: 0.5rem;
+
+    cursor: pointer;
 }
 
 .menu-item:hover {
@@ -237,4 +269,16 @@ a {
     background-image: linear-gradient(45deg, rgb(22, 22, 22), rgba(52, 152, 219, 0.8));
     background-size: 100%;
     background-repeat: repeat;
+}
+
+.navbar-title {
+    position: absolute;
+    margin-right: 770px;
+    padding-top: 24px;
+
+    transform: translate(0%, 0%);
+}
+
+.navbar-name {
+    padding: 24px 20px;
 }

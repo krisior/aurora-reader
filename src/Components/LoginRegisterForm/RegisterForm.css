@@ -51,7 +51,7 @@
     color: rgb(22, 22, 22);
 }
 
-.box-1-registerform input[placeholder = "username"]:focus, .box-1-registerform input[placeholder = "e-mail"]:focus{
+.box-1-registerform input[type = "text"]:focus, .box-1-registerform input[type = "email"]:focus{
     width: 325px;
     border-color: rgb(52, 152, 219);
 }

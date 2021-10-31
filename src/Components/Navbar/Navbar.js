@@ -7,7 +7,7 @@ import { CSSTransition } from 'react-transition-group'
 import './Navbar.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft, faAngleRight, faCog, faInfoCircle, faMoon, faSun, faPalette, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight, faCog, faInfoCircle, faMoon, faSun, faPalette, faQuestionCircle, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 
 import { faUser } from '@fortawesome/fontawesome-free-regular';
 
@@ -32,7 +32,7 @@ export const NavItem = (props) => {
 
     return(
         <li className="nav-item">
-            <a href="" className="icon-button" onClick={() => setOpen(!open)}>
+            <a className="icon-button" onClick={() => setOpen(!open)}>
                 { props.icon }
             </a>
             { open && props.children }
@@ -44,7 +44,7 @@ export const DarkModeToggle = ({ theme, toggleTheme }) => {
     
     return (
         <li className="nav-item">
-            <a href="" className="icon-button">
+            <a className="icon-button">
                 <div onClick={ toggleTheme }>
                     { theme === 'light'
                     ? 
@@ -69,7 +69,7 @@ export const DropdownMenuIntro = () => {
 
     function DropdownItem(props) {
         return (
-            <a href="" className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
+            <a className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
                 <span className="icon-left">{ props.leftIcon }</span>
 
                 { props.children }
@@ -113,7 +113,7 @@ export const DropdownMenuIntro = () => {
                                 
                     </DropdownItem>
                     <DropdownItem >
-                        <a href="###"><div className="about-text">
+                        <a><div className="about-text">
                             <p>
                                 <span className="small-about-text-gradient">aurora reader © 2021<br /><br /></span>
                                 <span className="small-about-text">authors:</span>
@@ -138,10 +138,14 @@ export const DropdownMenuIntro = () => {
     );
 }
 
-export const DropdownMenuMain = () => {
+export const DropdownMenuMain = (props) => {
 
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState('main');
+    
+    const logoutNoDB = (e) => {
+        props.setAuth(false);
+    }
 
     function calcHeight(el) {
         const height = el.offsetHeight;
@@ -149,8 +153,9 @@ export const DropdownMenuMain = () => {
     }
 
     function DropdownItem(props) {
+
         return (
-            <a href="#" className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
+            <a className="menu-item" onClick={ () => props.goToMenu && setActiveMenu(props.goToMenu) } >
                 <span className="icon-left">{ props.leftIcon }</span>
 
                 { props.children }
@@ -171,14 +176,21 @@ export const DropdownMenuMain = () => {
                 >
                 
                 <div className="menu">
-                    {<DropdownItem
+                    <DropdownItem
                         rightIcon={<FontAwesomeIcon icon={faCog} />} goToMenu="settings">
                         <p>settings</p>
-                    </DropdownItem>}
+                    </DropdownItem>
 
                     <DropdownItem
                         rightIcon={<FontAwesomeIcon icon={faInfoCircle} />} goToMenu="about">
                         <p>about</p></DropdownItem>
+
+                    <div onClick={e=>logoutNoDB(e)} >
+                    <DropdownItem onClick={e=>logoutNoDB(e)} 
+                        rightIcon={<FontAwesomeIcon icon={faPowerOff} style={{color: "rgb(22, 22, 22)"}}/>}>
+                        <p style={{fontWeight: "1000"}}>logout</p>
+                    </DropdownItem>
+                    </div>
                 </div>
             </CSSTransition>
 
@@ -209,12 +221,12 @@ export const DropdownMenuMain = () => {
                         <p>appearance</p>
                     </DropdownItem>
                     
-                    <a href="#">
-                        <DropdownItem
-                            rightIcon={<FontAwesomeIcon icon={ faQuestionCircle } />}>
-                        
-                        <p>help</p>
-                        </DropdownItem>
+                    <a>
+                    <DropdownItem
+                        rightIcon={<FontAwesomeIcon icon={ faQuestionCircle } />}>
+                    
+                    <p>help</p>
+                    </DropdownItem>
                     </a>
                     
                 </div>
@@ -235,7 +247,7 @@ export const DropdownMenuMain = () => {
                                 
                     </DropdownItem>
                     <DropdownItem >
-                        <a href="###"><div className="about-text">
+                        <a><div className="about-text">
                             <p>
                                 <span className="small-about-text-gradient">aurora reader © 2021<br /><br /></span>
                                 <span className="small-about-text">authors:</span>

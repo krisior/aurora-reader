@@ -15,8 +15,6 @@ import { Navbar, NavItem, DropdownMenuIntro, DarkModeToggle } from '../Component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
-
-
 function Main() {
   
   const [ theme, toggleTheme ] = useDarkMode();
@@ -31,7 +29,7 @@ function Main() {
 
         
         <Navbar> {/* ltr */}
-          <span className="navbar-title">aurora<span style={{color: "rgb(52, 152, 219)"}}>reader</span></span>
+          
           <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
           <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />}>
             <DropdownMenuIntro />

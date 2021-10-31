@@ -8,10 +8,11 @@ import { GlobalStyles, lightTheme, darkTheme } from '../Styles/globalStyles';
 import BgParticles from '../Components/BgParticles/BgParticles';
 
 import { Navbar, NavItem, DropdownMenuMain, /*DropdownMenuProfile*/ DarkModeToggle } from '../Components/Navbar/Navbar';
-
+import { DashboardLayout } from '../Components/Dashboard/DashboardLayout';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 
 
 function Dashboard(props) {
@@ -62,16 +63,20 @@ function Dashboard(props) {
           <BgParticles /> {/* already set as background */}        
 
           <Navbar> {/* ltr */ }
-            <span className="navbar-title">Hello -name- </span>
-            <button className='logout-btn' onClick={e=>logoutNoDB(e)}>Log out</button> {/* << You can do whatever you want with this btn, just keep the onClick the same */}
-
+            <span className="navbar-name">Hello <span style={{color: "rgb(52, 152, 219)"}}>-name- </span></span>
+            {/* << You can do whatever you want with this btn, just keep the onClick the same */}
 
             <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
-            <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />}>
-              <DropdownMenuMain />
+
+            <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />} >
+              <DropdownMenuMain {...props}/>
             </NavItem>
 
+            
+
           </Navbar>
+
+          <DashboardLayout />
 
       </div>
     </ThemeProvider>
