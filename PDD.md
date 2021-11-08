@@ -43,7 +43,16 @@ The progress-stage interpretation:
 | Design of the logo: convert to a vector version |🚧|17.10.2021|Krzysiu| --- | 
 | Design of the icons |❌|17.10.2021|Pola| --- | 
 | Design of the background: particles |✔|29.09.2021|Ula| 29.09.2021 | 
-| --- |❌|31.10.2021|---| --- | 
+| Design of the main page: basic UI |✔|30.09.2021|Krzysiu| 6.10.2021 | 
+| Setting up package.json: added necessary entries |✔|31.10.2021|Krzysiu| 16.10.2021 | 
+| Design of the login / register component: background, font, animations |✔|30.09.2021|Krzysiu| 6.10.2021 | 
+| (Look) Design of the header (navbar) component: background, font, animations |✔|12.10.2021|Krzysiu| 6.10.2021 |
+| (Content) Design of the header (navbar) component: dropdown context menu, active logout |🚧|14.11.2021|Krzysiu| --- | 
+| Design of the light / dark theme toggle: react-scripts, all the functionalities (logo-changing-script etc.), colorsheets |✔|31.10.2021|Krzysiu, Sandra|31.10.2021| 
+| Design of the main page: optimization |✔|31.10.2021|Ula|31.10.2021|
+| Desing of the "Welcome" component: logo-pointing, title animation, short navbar context menu |✔|14.10.2021|Krzysiu|17.10.2021 | 
+| Design of the login / register component: advanced UI, all components added to "Pages" |✔|16.10.2021|Krzysiu|21.10.2021 | 
+| Design of the main dashboard: layout, color changes |🚧|14.11.2021|Krzysiu| --- |
 
 | Other | Progress | Target finish date | Person responsible | Finish Date | 
 |-|:-:|:-:|:-:|:-:|
