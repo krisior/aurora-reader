@@ -171,7 +171,28 @@ export const GlobalStyles = createGlobalStyle`
 
       /*MAINPAGE*/
 
+      .navbar-name {
+            color:                  ${({ theme }) => theme.mainPageNavbarNameColor };
+      }
       
+      .main-title-dashboard {
+            color:                  ${({ theme }) => theme.mainPageTitleDashboardColor };
+      }
+      
+      .dashboard-item-1 {
+            color:                  ${({ theme }) => theme.mainPageDashboardItemColor };
+            background-color:       ${({ theme }) => theme.mainPageDashboardItemBackgroundColor };
+            
+      
+      .dashboard-button-1 {
+            color:                  ${({ theme }) => theme.mainPageDashboardButtonColor };
+            background-color:       ${({ theme }) => theme.mainPageDashboardButtonBackgroundColor };
+      }
+
+      .dashboard-button-1:hover {
+            color:                  ${({ theme }) => theme.mainPageDashboardButtonColorHover };
+            background-color:       ${({ theme }) => theme.mainPageDashboardButtonBackgroundColorHover };
+      }
 
 `;
 
@@ -261,8 +282,18 @@ export const lightTheme = {
       registerFormShowPassword:                             'rgb(22, 22, 22)',
 
       /*MAINPAGE*/
-
       
+      mainPageNavbarNameColor:                              'rgb(22, 22, 22)',
+      mainPageTitleDashboardColor:                          'rgba(22, 22, 22, 0.8)',
+
+      mainPageDashboardItemColor:                           'rgb(83, 83, 83)',
+      mainPageDashboardItemBackgroundColor:                 'rgba(83, 83, 83, 0.2)',
+
+      mainPageDashboardButtonColor:                         'rgb(83, 83, 83)',
+      mainPageDashboardButtonBackgroundColor:               'rgb(246, 246, 246, 1)',
+      
+      mainPageDashboardButtonColorHover:                    'rgba(52, 152, 219, 1)',
+      mainPageDashboardButtonBackgroundColorHover:          'rgba(228, 228, 228, 0.5)',
 };
 
 export const darkTheme = {
@@ -352,5 +383,15 @@ export const darkTheme = {
 
       /*MAINPAGE*/
 
+      mainPageNavbarNameColor:                              'rgba(246, 246, 246, 0.8)',
+      mainPageTitleDashboardColor:                          'rgba(246, 246, 246, 0.7)',
+
+      mainPageDashboardItemColor:                           'rgb(246, 0, 0)',
+      mainPageDashboardItemBackgroundColor:                 'rgba(83, 83, 83, 0.8)',
+
+      mainPageDashboardButtonColor:                         'rgb(246, 246, 246)',
+      mainPageDashboardButtonBackgroundColor:               'rgb(83, 83, 83)',
       
+      mainPageDashboardButtonColorHover:                    'rgba(52, 152, 219, 1)',
+      mainPageDashboardButtonBackgroundColorHover:          'rgba(22, 22, 22, 0.4)',
 };

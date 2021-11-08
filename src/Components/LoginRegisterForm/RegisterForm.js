@@ -103,7 +103,7 @@ export const RegisterForm = (props) => {
                 onChange={e=>onChange(e)}
             />
 
-            <div className="caps-lock">
+            <div className="caps-lock-REG">
                 <ReactIsCapsLockActive >
                     {active => <span> {active ? 'caps lock is active' : ''}</span>}
                 </ReactIsCapsLockActive>

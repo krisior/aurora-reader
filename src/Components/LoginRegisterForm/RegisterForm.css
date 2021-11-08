@@ -133,12 +133,14 @@ button.registerform:hover {
     display: inline-block;
 }
 
-.caps-lock {
-    position: absolute;
-    transform: translate(-110%, -70%);
-    width: 150px;
-    display: inline;
+.caps-lock-REG {
     
+    position: absolute;
+    top:56.5%;
+    left:28%;
+    display: flex;
+    width: 150px;
+
     color: rgb(252, 74, 74);
     font-size: 12px;
     font-weight: 900;

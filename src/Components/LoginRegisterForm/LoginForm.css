@@ -148,9 +148,10 @@ button.loginform:hover {
     display: inline-block;
 }
 
-.caps-lock {
+.caps-lock-LOG {
     position: absolute;
-    left: 53%;
+    top:43.5%;
+    left:31.5%;
     display: flex;
     width: 150px;
      

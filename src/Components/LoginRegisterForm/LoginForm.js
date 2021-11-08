@@ -83,7 +83,7 @@ const LoginForm = (props) => {
             
             <div className="show-password-login" onClick={togglePasswordVisiblity}><i><FontAwesomeIcon icon={passwordShown ? faEye : faEyeSlash } /></i></div>
             
-            <div className="caps-lock">
+            <div className="caps-lock-LOG">
                 <ReactIsCapsLockActive >
                     {active => <span> {active ? 'caps lock is active' : ''}</span>}
                 </ReactIsCapsLockActive>

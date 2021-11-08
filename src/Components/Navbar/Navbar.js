@@ -187,7 +187,7 @@ export const DropdownMenuMain = (props) => {
 
                     <div onClick={e=>logoutNoDB(e)} >
                     <DropdownItem onClick={e=>logoutNoDB(e)} 
-                        rightIcon={<FontAwesomeIcon icon={faPowerOff} style={{color: "rgb(22, 22, 22)"}}/>}>
+                        rightIcon={<FontAwesomeIcon icon={faPowerOff} />}>
                         <p style={{fontWeight: "1000"}}>logout</p>
                     </DropdownItem>
                     </div>
@@ -249,16 +249,16 @@ export const DropdownMenuMain = (props) => {
                     <DropdownItem >
                         <a><div className="about-text">
                             <p>
-                                <span className="small-about-text-gradient">aurora reader © 2021<br /><br /></span>
+                                <span className="small-about-text-gradient">aurorareader © 2021<br /><br /></span>
                                 <span className="small-about-text">authors:</span>
                                 
                                 <br /><br />
 
                                 <span className="authors-about-text">
-                                    Ula Mądzielewska<br /><br />
-                                    Pola Nadarzewska<br /><br />
-                                    Sandra Gołuńska<br /><br />
-                                    Krzysiek Wiłnicki
+                                    ula mądzielewska<br /><br />
+                                    pola nadarzewska<br /><br />
+                                    sandra gołuńska<br /><br />
+                                    krzysiek wiłnicki
                                 </span>
                             </p>
                         </div></a>
