@@ -57,7 +57,7 @@ The progress-stage interpretation:
 | Other | Progress | Target finish date | Person responsible | Finish Date | 
 |-|:-:|:-:|:-:|:-:|
 | GitHub design and management |🚧|until the end|Sandra, Krzysiu| --- | 
-| Welcome-PDF once after register: creation |❌|08.11.2021|Krzysiu| --- | 
+| Welcome-PDF once after register: creation |❌|08.11.2021| Sandra | --- | 
 | Welcome-PDF once after register: implementation |❌|15.11.2021|Ula| --- | 
 
 
