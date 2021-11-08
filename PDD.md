@@ -16,7 +16,7 @@ The progress-stage interpretation:
 
 - **🚧** - in progress / partially functioning,
 
-- **❌** - undesigned and undone tasks.
+- **❌** - undesigned and not done tasks.
 
 - - -
 
