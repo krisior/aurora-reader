@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 
+import ModalAddMenu from '../Components/Dashboard/Modal';
 
 function Dashboard(props) {
   /*
@@ -55,6 +56,7 @@ function Dashboard(props) {
   const [ theme, toggleTheme ] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
+  const [isOpenAddMenu, setIsOpenAddMenu] = useState(false)
   return (
     <ThemeProvider theme={ themeMode }>
         <div className="MainEntry">
@@ -75,6 +77,15 @@ function Dashboard(props) {
           </Navbar>
 
           <DashboardLayout />
+          <button className="main-add-new" 
+            onClick={() => setIsOpenAddMenu(true)} >
+              add <span style={{fontWeight: '1000'}}>new one</span>
+                        
+          </button>
+
+          <ModalAddMenu open={ isOpenAddMenu } onClose={() => setIsOpenAddMenu(false)}>
+                        
+          </ModalAddMenu>
 
       </div>
     </ThemeProvider>

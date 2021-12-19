@@ -221,10 +221,10 @@ export const DropdownMenuMain = (props) => {
                         <p>appearance</p>
                     </DropdownItem>
                     
-                    <a>
+                    <a target="_blank" href="https://github.com/krisior/aurora-reader">
                     <DropdownItem
-                        rightIcon={<FontAwesomeIcon icon={ faQuestionCircle } />}>
-                    
+                         rightIcon={<FontAwesomeIcon icon={ faQuestionCircle } />}>
+                            
                     <p>help</p>
                     </DropdownItem>
                     </a>

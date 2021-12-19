@@ -8,7 +8,7 @@ function WelcomeContainer() {
         <div className="page-content">
             <div className="aurora-name">
                 <p><span style={{fontWeight: "1000", fontSize: "130px"}}>aurora</span><span style={{fontWeight: "50", fontSize: "50px"}}> e-book reader </span></p>
-                <p className="aurora-quote"><span className="aurora-quote-animation" >klops.</span> klops.</p>
+                <p className="aurora-quote">read <span className="aurora-quote-animation" >easier</span> </p>
             </div>
         </div>
     )
