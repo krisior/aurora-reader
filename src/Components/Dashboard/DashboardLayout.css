@@ -35,11 +35,16 @@
       
 }
 
+.grid-wrap {
+      overflow-y: auto;
+      margin-top: 7rem;
+      height: 650px;
+}
+
 .dashboard-grid { /* w: 1230px ATTENTION */
       width: 75%;
 
       margin: 0 auto;
-      margin-top: 7rem;
       margin-bottom: 5rem;
       
       display: grid;
@@ -53,6 +58,8 @@
       
       align-items: center;
       justify-items: center;
+
+      
 
 }
 

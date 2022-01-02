@@ -280,5 +280,12 @@ div.logout-button {
 }
 
 .navbar-name {
-    padding: 24px 20px;
+    /*position: absolute;*/
+    
+    white-space: nowrap;
+
+    right: 155px;
+    padding: 24px 18px;
+
+    overflow: hidden;
 }

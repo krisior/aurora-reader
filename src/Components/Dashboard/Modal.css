@@ -12,7 +12,7 @@
 
 }
 
-.dashboard-add-menu {
+.dashboardaddmenu {
       position: absolute;
       top: 49%;
       left: 50%;
@@ -21,7 +21,7 @@
       width: 70rem;
       height: 45rem;
 
-      background-color: rgba(212, 212, 212, 0.9);
+      background-color: rgba(212, 212, 212, 0.8);
 
       border-radius: 50px;
       z-Index: 1000;
@@ -29,11 +29,11 @@
       transition: 0.1s ease-out;      
 }
 
-.dashboard-add-menu:hover {
+.dashboardaddmenu:hover {
       background-color: rgba(199, 199, 199, 1);
 }
 
-.close-button {
+.closebutton {
       position: fixed;
       top: -5%;
       right: -1%;
@@ -45,18 +45,19 @@
 
       border: none;
       border-radius: 100%;
-
-      background-color: rgba(220, 220, 220, 1);
+      background-color: rgba(235, 235, 235, 0.9);
+      color: rgb(95, 95, 95);
       display: flex;
       align-items: center;
       justify-content: center;
 
       transition: 0.3s;
 
+      opacity: 1;
       cursor: pointer;
 }
 
-.close-button:hover {
+.closebutton:hover {
       background-color: rgba(255, 255, 255, 1);
       color: rgb(48, 136, 194);
 
@@ -251,8 +252,8 @@
 }
 
 .dashboard-add-menu-send {
-    border: 3px solid rgb(83, 83, 83);
-    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(199, 199, 199, 0.4);
+    background-color: rgba(132, 186, 223, 0.5);
 
     display: block;
     margin: 20px auto;
@@ -260,7 +261,7 @@
     padding: 10px 10px;
 
     text-align: center;
-    width: 250px;
+    width: 240px;
 
     cursor: pointer;
     color: rgb(22, 22, 22);
@@ -277,4 +278,5 @@
 
 .dashboard-add-menu-send:hover {
     border-color: rgb(52, 152, 219);
+    background-color: rgba(52, 152, 219, 1);
 }

@@ -8,8 +8,9 @@ import{
 
 import Main from './Pages/Main';
 import Login from './Pages/Login';
-import Register from './Pages/Register'
-import Dashboard from './Pages/Dashboard'
+import Register from './Pages/Register';
+import Dashboard from './Pages/Dashboard';
+import Book from './Pages/Book';
 
 const App = () => {
 
@@ -38,8 +39,6 @@ const [isAuthenticated, setIsAuthenticated] = useState(false);
     isAuth();
     });
 
-
-
     return (
         <Fragment>
             <Router>
@@ -60,6 +59,11 @@ const [isAuthenticated, setIsAuthenticated] = useState(false);
                     exact path="/dashboard"
                     render={(props) => isAuthenticated ? (<Dashboard {...props} setAuth={setAuth} />) : (<Redirect to='/login'/>)}
                     />
+                    <Route
+                    exact path="/book"
+                    render={(props) => <Book {...props} setAuth={setAuth} />} 
+                    />
+                    
                 </Switch>
             </Router>
         </Fragment>

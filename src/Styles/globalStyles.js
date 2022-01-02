@@ -196,65 +196,65 @@ export const GlobalStyles = createGlobalStyle`
 
       /*MODAL_ADD*/
 
-      .dashboard-add-menu {
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuBackgroundColor };
+      .dashboardaddmenu {
+            background-color:       ${({ theme }) => theme.navbarIconButtonBackgroundColor };
       }
 
-      .dashboard-add-menu:hover {
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuBackgroundColorHover };
+      .dashboardaddmenu:hover {
+            background-color:       ${({ theme }) => theme.mainPageModalAMBackgroundColorHover };
       }
 
-      .close-button {
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuCloseButtonColor };
+      .closebutton {
+            background-color:       ${({ theme }) => theme.mainPageModalAMCloseButtonColor };
       }
 
-      .close-button:hover {
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuCloseButtonBackgroundColorHover };
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuCloseButtonColorHover };
+      .closebutton:hover {
+            background-color:       ${({ theme }) => theme.mainPageModalAMCloseButtonBackgroundColorHover };
+            color:                  ${({ theme }) => theme.mainPageModalAMCloseButtonColorHover };
 
       }
 
       .add-menu-title {
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuTitleColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMTitleColor };
       }
 
       .main-add-menu input[type = "text"] {
             
-            border:                 ${({ theme }) => theme.mainPageModalAddMenuInputBorder };
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuInputBackgroundColor };
+            border:                 ${({ theme }) => theme.mainPageModalAMInputBorder };
+            background-color:       ${({ theme }) => theme.mainPageModalAMInputBackgroundColor };
       
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuInputColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
             
       }
 
       textarea {
       
-            border:                 ${({ theme }) => theme.mainPageModalAddMenuInputBorder };
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuInputBackgroundColor };
+            border:                 ${({ theme }) => theme.mainPageModalAMInputBorder };
+            background-color:       ${({ theme }) => theme.mainPageModalAMInputBackgroundColor };
       
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuInputColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       
       }
       
       .main-add-menu input[type = "text"]::placeholder {
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuInputColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       }
 
       .custom-file-upload {
-            border:                 ${({ theme }) => theme.mainPageModalAddMenuFileUploadBorder };
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuFileUploadBackgroundColor };
+            border:                 ${({ theme }) => theme.mainPageModalAMFileUploadBorder };
+            background-color:       ${({ theme }) => theme.mainPageModalAMFileUploadBackgroundColor };
       }
 
       .custom-file-upload-bottom {
-            border:                 ${({ theme }) => theme.mainPageModalAddMenuFileUploadBorder };
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuFileUploadBackgroundColor };
+            border:                 ${({ theme }) => theme.mainPageModalAMFileUploadBorder };
+            background-color:       ${({ theme }) => theme.mainPageModalAMFileUploadBackgroundColor };
       }
 
       .dashboard-add-menu-send {
-            border:                 ${({ theme }) => theme.mainPageModalAddMenuInputBorder };
-            background-color:       ${({ theme }) => theme.mainPageModalAddMenuInputBackgroundColor };
+            border:                 ${({ theme }) => theme.mainPageModalAMInputBorder };
+            background-color:       ${({ theme }) => theme.mainPageModalAMInputBackgroundColor };
       
-            color:                  ${({ theme }) => theme.mainPageModalAddMenuInputColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       }
 
 
@@ -375,7 +375,7 @@ export const lightTheme = {
 
       mainPageModalAddMenuCloseButtonColor:                 'rgba(255, 255, 255, 1)',
       mainPageModalAddMenuCloseButtonColorHover:            'rgb(48, 136, 194)',
-      mainPageModalAddMenuCloseButtonBackgroundColorHover:  'rgba(255, 255, 255, 1)',
+      mainPageModalAddMenuCloseButtonBackgroundColorHover:  'rgba(212, 212, 212, 1)',
 
       mainPageModalAddMenuTitleColor:                       'rgba(14, 14, 14, 0.952)',
 
@@ -500,21 +500,21 @@ export const darkTheme = {
 
       /*MODAL_ADD*/
 
-      mainPageModalAddMenuBackgroundColor:                  'rgba(22, 22, 22, 0.9)',
-      mainPageModalAddMenuBackgroundColorHover:             'rgba(199, 199, 199, 1)',
+      mainPageModalAMBackgroundColor:                  'rgba(22, 22, 22, 0.9)',
+      mainPageModalAMBackgroundColorHover:             'rgba(83, 83, 83, 1)',
 
-      mainPageModalAddMenuCloseButtonColor:                 'rgba(83, 83, 83, 1)',
-      mainPageModalAddMenuCloseButtonColorHover:            'rgb(48, 136, 194)',
-      mainPageModalAddMenuCloseButtonBackgroundColorHover:  'rgba(83, 83, 83, 1)',
+      mainPageModalAMCloseButtonColor:                 'rgba(83, 83, 83, 1)',
+      mainPageModalAMCloseButtonColorHover:            'rgb(48, 136, 194)',
+      mainPageModalAMCloseButtonBackgroundColorHover:  'rgba(83, 83, 83, 1)',
       
-      mainPageModalAddMenuTitleColor:                       'rgba(246, 246, 246, 0.952)',
+      mainPageModalAMTitleColor:                       'rgba(246, 246, 246, 0.952)',
       
-      mainPageModalAddMenuInputBorder:                      '3px solid rgb(83, 83, 83)',
-      mainPageModalAddMenuInputBackgroundColor:             'rgba(83, 83, 83, 0.3)',
-      mainPageModalAddMenuInputColor:                       'rgb(22, 22, 22)',
+      mainPageModalAMInputBorder:                      '3px solid rgb(83, 83, 83)',
+      mainPageModalAMInputBackgroundColor:             'rgba(83, 83, 83, 0.3)',
+      mainPageModalAMInputColor:                       'rgb(22, 22, 22)',
       
-      mainPageModalAddMenuFileUploadBorder:                 '3px solid rgb(83, 83, 83)',
-      mainPageModalAddMenuFileUploadBackgroundColor:        'rgba(83, 83, 83, 0.3);',
+      mainPageModalAMFileUploadBorder:                 '3px solid rgb(83, 83, 83)',
+      mainPageModalAMFileUploadBackgroundColor:        'rgba(83, 83, 83, 0.3);',
      
-      mainPageModalAddMenuSendBackgroundColor:              'rgba(83, 83, 83, 0.6)',
+      mainPageModalAMSendBackgroundColor:              'rgba(83, 83, 83, 0.6)',
 };

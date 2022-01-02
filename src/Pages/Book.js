@@ -14,51 +14,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 
-import ModalAddMenu from '../Components/Dashboard/Modal';
+import { BookLayout } from '../Components/Book/BookLayout';
 
-function Dashboard(props) {
-  /*
-  const [name, setName] = useState("");
-
-    async function getName(){
-        try {
-            const response = await fetch('http://localhost:4000/dashboard',{
-                method: "GET",
-                headers:{token : localStorage.token}
-            });
-
-
-            const parseRes = await response.json();
-
-            setName(parseRes.user_name);
-        } catch (err) {
-            console.error(err);
-        }
-    };
-
-    useEffect(()=>{
-        getName()
-    },[]);
-
+function Book(props) {
+      const [ theme, toggleTheme ] = useDarkMode();
+      const themeMode = theme === 'light' ? lightTheme : darkTheme;
     
-    const logout = (e) =>{
-        e.preventDefault();
-
-        localStorage.removeItem("token");
-        props.setAuth(false);
-    };
-    */
-
-    const logoutNoDB = (e) => {
-      props.setAuth(false);
-    }
-
-  const [ theme, toggleTheme ] = useDarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-  const [isOpenAddMenu, setIsOpenAddMenu] = useState(false);
-
-  const name = "Krzysiuu";
+      const name = "Krzysiuu";
 
   return (
     <ThemeProvider theme={ themeMode }>
@@ -74,26 +36,15 @@ function Dashboard(props) {
             <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
 
             <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />} >
-              <DropdownMenuMain {...props}/>
+              <DropdownMenuEBOOK {...props}/>
             </NavItem>
 
           </Navbar>
 
-          <DashboardLayout />
-
-          <button className="main-add-new" 
-            onClick={() => setIsOpenAddMenu(true)} >
-              add <span style={{fontWeight: '1000'}}>new one</span>
-                        
-          </button>
-
-          <ModalAddMenu open={ isOpenAddMenu } onClose={() => setIsOpenAddMenu(false)} />
-
+            <BookLayout />
       </div>
     </ThemeProvider>
   );
 }
 
-
-
-export default Dashboard;
+export default Book;
