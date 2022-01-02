@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import './BasicInfo.css';
@@ -7,14 +7,14 @@ import { GlobalStyles, lightTheme, darkTheme } from '../Styles/globalStyles';
 
 import BgParticles from '../Components/BgParticles/BgParticles';
 
-import { Navbar, NavItem, DropdownMenuMain, /*DropdownMenuProfile*/ DarkModeToggle, DropdownMenuEBOOK } from '../Components/Navbar/Navbar';
-import { DashboardLayout } from '../Components/Dashboard/DashboardLayout';
+import { Navbar, NavItem, DropdownMenuMain, DarkModeToggle } from '../Components/Navbar/Navbar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
-import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 
 import { BookLayout } from '../Components/Book/BookLayout';
+
+
 
 function Book(props) {
       const [ theme, toggleTheme ] = useDarkMode();
@@ -24,7 +24,7 @@ function Book(props) {
 
   return (
     <ThemeProvider theme={ themeMode }>
-        <div className="MainEntry">
+        <div className="BookEntry">
           <GlobalStyles /> {/* themes */} 
 
           <BgParticles /> {/* already set as background */}        
@@ -36,13 +36,14 @@ function Book(props) {
             <DarkModeToggle theme={ theme } toggleTheme={ toggleTheme }/>
 
             <NavItem icon={<FontAwesomeIcon icon={ faEllipsisV } />} >
-              <DropdownMenuEBOOK {...props}/>
+              <DropdownMenuMain {...props}/>
             </NavItem>
 
           </Navbar>
 
-            <BookLayout />
+          <BookLayout />
       </div>
+      
     </ThemeProvider>
   );
 }

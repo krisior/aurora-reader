@@ -153,6 +153,10 @@
       font-family: 'Roboto Condensed', sans-serif;
   }
 
+  .main-add-menu input[type = "text"]:hover, .main-add-menu input[type = "text"]:focus {
+    border-color: rgb(52, 136, 194);
+}
+
  textarea {
     
     width: 250px;

@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
       #particle-canvas {
             background-color:       ${({ theme }) => theme.backgroundParticlesBackgroundColor };
       }
-
+      
       /*NAVBAR*/
       
       a {
@@ -168,7 +168,7 @@ export const GlobalStyles = createGlobalStyle`
       .show-password {        
             color:                  ${({ theme }) => theme.registerFormShowPassword };
       }
-
+      
       /*MAINPAGE*/
 
       .navbar-name {
@@ -183,7 +183,8 @@ export const GlobalStyles = createGlobalStyle`
             color:                  ${({ theme }) => theme.mainPageDashboardItemColor };
             background-color:       ${({ theme }) => theme.mainPageDashboardItemBackgroundColor };
             
-      
+      }
+
       .dashboard-button-1 {
             color:                  ${({ theme }) => theme.mainPageDashboardButtonColor };
             background-color:       ${({ theme }) => theme.mainPageDashboardButtonBackgroundColor };
@@ -193,11 +194,11 @@ export const GlobalStyles = createGlobalStyle`
             color:                  ${({ theme }) => theme.mainPageDashboardButtonColorHover };
             background-color:       ${({ theme }) => theme.mainPageDashboardButtonBackgroundColorHover };
       }
-
+      
       /*MODAL_ADD*/
 
       .dashboardaddmenu {
-            background-color:       ${({ theme }) => theme.navbarIconButtonBackgroundColor };
+            background-color:       ${({ theme }) => theme.mainPageModalAMBackgroundColor };
       }
 
       .dashboardaddmenu:hover {
@@ -243,11 +244,13 @@ export const GlobalStyles = createGlobalStyle`
       .custom-file-upload {
             border:                 ${({ theme }) => theme.mainPageModalAMFileUploadBorder };
             background-color:       ${({ theme }) => theme.mainPageModalAMFileUploadBackgroundColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       }
 
       .custom-file-upload-bottom {
             border:                 ${({ theme }) => theme.mainPageModalAMFileUploadBorder };
             background-color:       ${({ theme }) => theme.mainPageModalAMFileUploadBackgroundColor };
+            color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       }
 
       .dashboard-add-menu-send {
@@ -256,7 +259,22 @@ export const GlobalStyles = createGlobalStyle`
       
             color:                  ${({ theme }) => theme.mainPageModalAMInputColor };
       }
+      /*BOOK VIEW*/
+      
+      .textContainer {
+            color:                  ${({ theme }) => theme.bookPageTextContainerColor };
+        }
 
+      .returnFromBook {
+            color:                  ${({ theme }) => theme.bookPageTextContainerColor };
+            background-color:       ${({ theme }) => theme.bookPageTextContainerBackgroundColor };
+      
+      }
+
+      .returnFromBook:hover {
+            background-color:       ${({ theme }) => theme.bookPageTextContainerBackgroundColorHover };
+      
+      }
 
 `;
 
@@ -370,24 +388,29 @@ export const lightTheme = {
 
       /*MODAL_ADD*/
 
-      mainPageModalAddMenuBackgroundColor:                  'rgba(212, 212, 212, 0.9)',
-      mainPageModalAddMenuBackgroundColorHover:             'rgba(199, 199, 199, 1)',
+      mainPageModalAMBackgroundColor:                  'rgba(225, 225, 225, 0.9)',
+      mainPageModalAMBackgroundColorHover:             'rgba(212, 212, 212, 1)',
 
-      mainPageModalAddMenuCloseButtonColor:                 'rgba(255, 255, 255, 1)',
-      mainPageModalAddMenuCloseButtonColorHover:            'rgb(48, 136, 194)',
-      mainPageModalAddMenuCloseButtonBackgroundColorHover:  'rgba(212, 212, 212, 1)',
+      mainPageModalAMCloseButtonColor:                 'rgba(225, 225, 225, 1)',
+      mainPageModalAMCloseButtonColorHover:            'rgb(52, 152, 219)',
+      mainPageModalAMCloseButtonBackgroundColorHover:  'rgba(246, 246, 246, 1)',
 
-      mainPageModalAddMenuTitleColor:                       'rgba(14, 14, 14, 0.952)',
+      mainPageModalAMTitleColor:                       'rgba(14, 14, 14, 0.952)',
 
-      mainPageModalAddMenuInputBorder:                      '3px solid rgb(83, 83, 83)',
-      mainPageModalAddMenuInputBackgroundColor:             'rgba(255, 255, 255, 0.3)',
-      mainPageModalAddMenuInputColor:                       'rgb(22, 22, 22)',
+      mainPageModalAMInputBorder:                      '3px solid rgb(83, 83, 83)',
+      mainPageModalAMInputBackgroundColor:             'rgba(255, 255, 255, 0.3)',
+      mainPageModalAMInputColor:                       'rgb(22, 22, 22)',
 
-      mainPageModalAddMenuFileUploadBorder:                 '3px solid rgb(83, 83, 83)',
-      mainPageModalAddMenuFileUploadBackgroundColor:        'rgba(255, 255, 255, 0.3);',
+      mainPageModalAMFileUploadBorder:                 '3px solid rgb(83, 83, 83)',
+      mainPageModalAMFileUploadBackgroundColor:        'rgba(255, 255, 255, 0.3);',
 
-      mainPageModalAddMenuSendBackgroundColor:              'rgba(255, 255, 255, 0.6)',
+      mainPageModalAMSendBackgroundColor:              'rgba(255, 255, 255, 0.6)',
 
+      /*BOOK_VIEW*/
+      
+      bookPageTextContainerColor:                      'rgba(22, 22, 22, 1)',
+      bookPageTextContainerBackgroundColor:            'rgba(255, 255, 255, 0.6)',
+      bookPageTextContainerBackgroundColorHover:       'rgba(52, 152, 219, 0.4)',
 };
 
 export const darkTheme = {
@@ -500,21 +523,27 @@ export const darkTheme = {
 
       /*MODAL_ADD*/
 
-      mainPageModalAMBackgroundColor:                  'rgba(22, 22, 22, 0.9)',
-      mainPageModalAMBackgroundColorHover:             'rgba(83, 83, 83, 1)',
+      mainPageModalAMBackgroundColor:                       'rgba(22, 22, 22, 0.9)',
+      mainPageModalAMBackgroundColorHover:                  'rgba(22, 22, 22, 1)',
 
-      mainPageModalAMCloseButtonColor:                 'rgba(83, 83, 83, 1)',
-      mainPageModalAMCloseButtonColorHover:            'rgb(48, 136, 194)',
-      mainPageModalAMCloseButtonBackgroundColorHover:  'rgba(83, 83, 83, 1)',
+      mainPageModalAMCloseButtonColor:                      'rgba(44, 44, 44, 0.4)',
+      mainPageModalAMCloseButtonColorHover:                 'rgb(52, 152, 219)',
+      mainPageModalAMCloseButtonBackgroundColorHover:       'rgba(44, 44, 44, 1)',
       
-      mainPageModalAMTitleColor:                       'rgba(246, 246, 246, 0.952)',
+      mainPageModalAMTitleColor:                            'rgba(246, 246, 246, 0.952)',
       
-      mainPageModalAMInputBorder:                      '3px solid rgb(83, 83, 83)',
-      mainPageModalAMInputBackgroundColor:             'rgba(83, 83, 83, 0.3)',
-      mainPageModalAMInputColor:                       'rgb(22, 22, 22)',
+      mainPageModalAMInputBorder:                           '3px solid rgb(44, 44, 49)',
+      mainPageModalAMInputBackgroundColor:                  'rgba(83, 83, 83, 0.3)',
+      mainPageModalAMInputColor:                            'rgb(246, 246, 246)',
       
-      mainPageModalAMFileUploadBorder:                 '3px solid rgb(83, 83, 83)',
-      mainPageModalAMFileUploadBackgroundColor:        'rgba(83, 83, 83, 0.3);',
+      mainPageModalAMFileUploadBorder:                      '3px solid rgb(83, 83, 83)',
+      mainPageModalAMFileUploadBackgroundColor:             'rgba(83, 83, 83, 0.3);',
      
-      mainPageModalAMSendBackgroundColor:              'rgba(83, 83, 83, 0.6)',
+      mainPageModalAMSendBackgroundColor:                   'rgba(83, 83, 83, 0.6)',
+
+      /*BOOK_VIEW*/
+
+      bookPageTextContainerColor:                           'rgb(246, 246, 246, 0.952)',
+      bookPageTextContainerBackgroundColor:                 'rgba(83, 83, 83, 0.1)',
+      bookPageTextContainerBackgroundColorHover:            'rgba(52, 152, 219, 0.6)',
 };

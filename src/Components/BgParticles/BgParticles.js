@@ -52,7 +52,7 @@ const BgParticles = () => {
         canvas.addEventListener('mousemove',(event)=>{
             mouse.x = event.x;
             mouse.y = event.y;
-            for(let i = 0; i < 7; i++){
+            for(let i = 0; i < 2; i++){
                 particlesArray.push(new Particle());
 
             }
