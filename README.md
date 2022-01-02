@@ -1,14 +1,12 @@
 <!-- shields.io -->
 
-# Aurora Reader
+# aurora reader
 
-For everyone who loves reading e-books. Log in our site, add your favourites and read.
+for everyone who loves reading e-books. log in to our site, add your favourites and read.
 
 read. easier.
 
 ## Table of Contents
- 
- ### 1
  
  - [1. Defining](#1-defining)
 	* [1.1 Project class](#11-project-class)
